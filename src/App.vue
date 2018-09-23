@@ -2,6 +2,12 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div
+      v-for="(foo, key) of bar"
+      v-if="foo"
+      :key="key">
+      Foo
+    </div>
   </div>
 </template>
 
